@@ -1,0 +1,5 @@
+# Each node may only write under its own topic; Node-RED sees everything.
+user nodered
+topic readwrite home/#
+
+pattern readwrite home/%u/#
