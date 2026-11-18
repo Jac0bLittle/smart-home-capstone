@@ -1,0 +1,14 @@
+node,check,result,detail
+climate,node online,PASS,
+climate,ping/pong (50 ms),PASS,
+climate,below band turns heater on: 20.0 C -> heater 1,PASS,heater=1
+climate,inside +/-0.5 band keeps it on: 22.3 C -> heater 1,PASS,heater=1
+climate,above band turns it off: 22.6 C -> heater 0,PASS,heater=0
+climate,inside band keeps it off: 21.8 C -> heater 0,PASS,heater=0
+climate,below band again turns it on: 21.4 C -> heater 1,PASS,heater=1
+climate,fan on above setpoint +1.5 C,PASS,
+climate,over-temp (41 C) publishes heater_cutoff,PASS,got over_temp
+climate,hub sends over-temp alert,PASS,
+climate,out-of-range setpoint (35) rejected,PASS,
+climate,setpoint 23.5 accepted,PASS,
+climate,manual mode: heater command works,PASS,

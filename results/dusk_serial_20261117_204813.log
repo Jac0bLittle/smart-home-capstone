@@ -1,0 +1,8 @@
+20:49:13.495  ESP  dark detected: lux 298 thr 375 power 0
+20:49:13.496  >> Nano m (motion)
+20:49:13.500  NANO t=58297 motion pulse
+20:49:13.529  NANO react_ms 12 (motion -> ESP32 LED on)
+20:49:14.089  ESP  light ON (power 1) lux 284 dark 1
+20:49:25.360  ESP  bright again: lux 515 dark 0 power 0
+20:49:25.982  ESP  light OFF after uncover (0.6 s) lux 517
+20:49:26.042  end state done

@@ -1,0 +1,12 @@
+node,check,result,detail
+lighting,node online,PASS,
+lighting,ping/pong (50 ms),PASS,
+lighting,bright room: light off,PASS,0
+lighting,lux change >10% published early,PASS,
+lighting,dark but no motion: stays off,PASS,
+lighting,dark + motion: light on,PASS,
+lighting,bright again: light off,PASS,
+lighting,power command switches to manual,PASS,
+lighting,manual power on,PASS,
+lighting,brightness 40,PASS,
+lighting,color #FF8800,PASS,

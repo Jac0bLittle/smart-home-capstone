@@ -1,0 +1,12 @@
+2026-11-16T16:05:07-05:00 jarvis systemd[1]: Stopping smarthome-alerter.service - Smart Home alert service (ntfy + email)...
+2026-11-16T16:05:07-05:00 jarvis systemd[1]: smarthome-alerter.service: Deactivated successfully.
+2026-11-16T16:05:07-05:00 jarvis systemd[1]: Stopped smarthome-alerter.service - Smart Home alert service (ntfy + email).
+2026-11-16T16:05:07-05:00 jarvis systemd[1]: Started smarthome-alerter.service - Smart Home alert service (ntfy + email).
+2026-11-16T16:05:07-05:00 jarvis python3[5797]: 2026-11-16 16:05:07 connected: Success
+2026-11-16T16:05:51-05:00 jarvis python3[5797]: 2026-11-16 16:05:51 email: SMTP_USER/SMTP_PASS/EMAIL_TO not set, skipped
+2026-11-16T16:05:51-05:00 jarvis python3[5797]: 2026-11-16 16:05:51 ALERT Test alert: Test alert requested (dashboard). (push handed off in 10146 ms, sent: ['push'])
+2026-11-16T16:06:07-05:00 jarvis python3[5797]: 2026-11-16 16:06:07 ALERT alarm node offline: The alarm node has been offline for over 60 s. (push handed off in 117 ms, sent: ['push'])
+2026-11-16T16:06:07-05:00 jarvis python3[5797]: 2026-11-16 16:06:07 ALERT climate node offline: The climate node has been offline for over 60 s. (push handed off in 122 ms, sent: ['push'])
+2026-11-16T16:06:07-05:00 jarvis python3[5797]: 2026-11-16 16:06:07 ALERT lighting node offline: The lighting node has been offline for over 60 s. (push handed off in 123 ms, sent: ['push'])
+2026-11-16T16:06:12-05:00 jarvis python3[5797]: 2026-11-16 16:06:12 email: SMTP_USER/SMTP_PASS/EMAIL_TO not set, skipped
+2026-11-16T16:06:12-05:00 jarvis python3[5797]: 2026-11-16 16:06:12 ALERT Test alert: Test alert requested (dashboard). (push handed off in 126 ms, sent: ['push'])

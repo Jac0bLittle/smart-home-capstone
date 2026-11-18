@@ -1,0 +1,3399 @@
+[
+  {
+    "id": "sh0010",
+    "type": "tab",
+    "label": "Overview",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "sh0042",
+    "type": "tab",
+    "label": "Climate",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "sh0067",
+    "type": "tab",
+    "label": "Alarm",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "sh0094",
+    "type": "tab",
+    "label": "Lighting",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "sh0115",
+    "type": "tab",
+    "label": "Solar",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "sh0136",
+    "type": "tab",
+    "label": "System",
+    "disabled": false,
+    "info": ""
+  },
+  {
+    "id": "sh0001",
+    "type": "mqtt-broker",
+    "name": "jarvis broker",
+    "broker": "localhost",
+    "port": "1883",
+    "clientid": "",
+    "autoConnect": true,
+    "usetls": false,
+    "verifyservercert": false,
+    "compatmode": false,
+    "protocolVersion": "4",
+    "keepalive": "30",
+    "cleansession": true,
+    "autoUnsubscribe": true,
+    "birthTopic": "",
+    "birthQos": "0",
+    "birthRetain": "false",
+    "birthPayload": "",
+    "birthMsg": {},
+    "closeTopic": "",
+    "closeQos": "0",
+    "closeRetain": "false",
+    "closePayload": "",
+    "closeMsg": {},
+    "willTopic": "",
+    "willQos": "0",
+    "willRetain": "false",
+    "willPayload": "",
+    "willMsg": {},
+    "userProps": "",
+    "sessionExpiry": 0
+  },
+  {
+    "id": "sh0002",
+    "type": "ui-base",
+    "name": "Smart Home",
+    "path": "/dashboard",
+    "appIcon": "",
+    "includeClientData": true,
+    "acceptsClientConfig": [
+      "ui-notification",
+      "ui-control"
+    ],
+    "showPathInSidebar": false,
+    "headerContent": "page",
+    "navigationStyle": "default",
+    "titleBarStyle": "default",
+    "showReconnectNotification": true,
+    "notificationDisplayTime": 1,
+    "showDisconnectNotification": true,
+    "allowInstall": false
+  },
+  {
+    "id": "sh0003",
+    "type": "ui-theme",
+    "name": "Smart Home Theme",
+    "colors": {
+      "surface": "#1f3b57",
+      "primary": "#2b6cb0",
+      "bgPage": "#f4f6f8",
+      "groupBg": "#ffffff",
+      "groupOutline": "#d9d9e0"
+    },
+    "sizes": {
+      "density": "default",
+      "pagePadding": "12px",
+      "groupGap": "12px",
+      "groupBorderRadius": "6px",
+      "widgetGap": "12px"
+    }
+  },
+  {
+    "id": "sh0004",
+    "type": "ui-page",
+    "name": "Overview",
+    "ui": "sh0002",
+    "path": "/overview",
+    "icon": "home",
+    "layout": "grid",
+    "theme": "sh0003",
+    "breakpoints": [
+      {
+        "name": "Default",
+        "px": 0,
+        "cols": 3
+      },
+      {
+        "name": "Tablet",
+        "px": 576,
+        "cols": 6
+      },
+      {
+        "name": "Small Desktop",
+        "px": 768,
+        "cols": 9
+      },
+      {
+        "name": "Desktop",
+        "px": 1024,
+        "cols": 12
+      }
+    ],
+    "tabs": [],
+    "order": 1,
+    "className": "",
+    "visible": "true",
+    "disabled": "false"
+  },
+  {
+    "id": "sh0005",
+    "type": "ui-page",
+    "name": "Climate",
+    "ui": "sh0002",
+    "path": "/climate",
+    "icon": "thermometer",
+    "layout": "grid",
+    "theme": "sh0003",
+    "breakpoints": [
+      {
+        "name": "Default",
+        "px": 0,
+        "cols": 3
+      },
+      {
+        "name": "Tablet",
+        "px": 576,
+        "cols": 6
+      },
+      {
+        "name": "Small Desktop",
+        "px": 768,
+        "cols": 9
+      },
+      {
+        "name": "Desktop",
+        "px": 1024,
+        "cols": 12
+      }
+    ],
+    "tabs": [],
+    "order": 2,
+    "className": "",
+    "visible": "true",
+    "disabled": "false"
+  },
+  {
+    "id": "sh0006",
+    "type": "ui-page",
+    "name": "Alarm",
+    "ui": "sh0002",
+    "path": "/alarm",
+    "icon": "shield-home",
+    "layout": "grid",
+    "theme": "sh0003",
+    "breakpoints": [
+      {
+        "name": "Default",
+        "px": 0,
+        "cols": 3
+      },
+      {
+        "name": "Tablet",
+        "px": 576,
+        "cols": 6
+      },
+      {
+        "name": "Small Desktop",
+        "px": 768,
+        "cols": 9
+      },
+      {
+        "name": "Desktop",
+        "px": 1024,
+        "cols": 12
+      }
+    ],
+    "tabs": [],
+    "order": 3,
+    "className": "",
+    "visible": "true",
+    "disabled": "false"
+  },
+  {
+    "id": "sh0007",
+    "type": "ui-page",
+    "name": "Lighting",
+    "ui": "sh0002",
+    "path": "/lighting",
+    "icon": "lightbulb",
+    "layout": "grid",
+    "theme": "sh0003",
+    "breakpoints": [
+      {
+        "name": "Default",
+        "px": 0,
+        "cols": 3
+      },
+      {
+        "name": "Tablet",
+        "px": 576,
+        "cols": 6
+      },
+      {
+        "name": "Small Desktop",
+        "px": 768,
+        "cols": 9
+      },
+      {
+        "name": "Desktop",
+        "px": 1024,
+        "cols": 12
+      }
+    ],
+    "tabs": [],
+    "order": 4,
+    "className": "",
+    "visible": "true",
+    "disabled": "false"
+  },
+  {
+    "id": "sh0008",
+    "type": "ui-page",
+    "name": "Solar",
+    "ui": "sh0002",
+    "path": "/solar",
+    "icon": "solar-panel",
+    "layout": "grid",
+    "theme": "sh0003",
+    "breakpoints": [
+      {
+        "name": "Default",
+        "px": 0,
+        "cols": 3
+      },
+      {
+        "name": "Tablet",
+        "px": 576,
+        "cols": 6
+      },
+      {
+        "name": "Small Desktop",
+        "px": 768,
+        "cols": 9
+      },
+      {
+        "name": "Desktop",
+        "px": 1024,
+        "cols": 12
+      }
+    ],
+    "tabs": [],
+    "order": 5,
+    "className": "",
+    "visible": "true",
+    "disabled": "false"
+  },
+  {
+    "id": "sh0009",
+    "type": "ui-page",
+    "name": "System",
+    "ui": "sh0002",
+    "path": "/system",
+    "icon": "cog",
+    "layout": "grid",
+    "theme": "sh0003",
+    "breakpoints": [
+      {
+        "name": "Default",
+        "px": 0,
+        "cols": 3
+      },
+      {
+        "name": "Tablet",
+        "px": 576,
+        "cols": 6
+      },
+      {
+        "name": "Small Desktop",
+        "px": 768,
+        "cols": 9
+      },
+      {
+        "name": "Desktop",
+        "px": 1024,
+        "cols": 12
+      }
+    ],
+    "tabs": [],
+    "order": 6,
+    "className": "",
+    "visible": "true",
+    "disabled": "false"
+  },
+  {
+    "id": "sh0011",
+    "type": "ui-group",
+    "name": "Node status",
+    "page": "sh0004",
+    "width": "4",
+    "height": "1",
+    "order": 1,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default",
+    "keepLoaded": false,
+    "tab": ""
+  },
+  {
+    "id": "sh0022",
+    "type": "ui-group",
+    "name": "At a glance",
+    "page": "sh0004",
+    "width": "4",
+    "height": "1",
+    "order": 2,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default",
+    "keepLoaded": false,
+    "tab": ""
+  },
+  {
+    "id": "sh0038",
+    "type": "ui-group",
+    "name": "Last 5 alerts",
+    "page": "sh0004",
+    "width": "4",
+    "height": "1",
+    "order": 3,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default",
+    "keepLoaded": false,
+    "tab": ""
+  },
+  {
+    "id": "sh0043",
+    "type": "ui-group",
+    "name": "Now",
+    "page": "sh0005",
+    "width": "6",
+    "height": "1",
+    "order": 4,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default",
+    "keepLoaded": false,
+    "tab": ""
+  },
+  {
+    "id": "sh0054",
+    "type": "ui-group",
+    "name": "Control",
+    "page": "sh0005",
+    "width": "6",
+    "height": "1",
+    "order": 5,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default",
+    "keepLoaded": false,
+    "tab": ""
+  },
+  {
+    "id": "sh0063",
+    "type": "ui-group",
+    "name": "Last 24 hours",
+    "page": "sh0005",
+    "width": "12",
+    "height": "1",
+    "order": 6,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default",
+    "keepLoaded": false,
+    "tab": ""
+  },
+  {
+    "id": "sh0068",
+    "type": "ui-group",
+    "name": "Status",
+    "page": "sh0006",
+    "width": "6",
+    "height": "1",
+    "order": 7,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default",
+    "keepLoaded": false,
+    "tab": ""
+  },
+  {
+    "id": "sh0080",
+    "type": "ui-group",
+    "name": "Actions",
+    "page": "sh0006",
+    "width": "6",
+    "height": "1",
+    "order": 8,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default",
+    "keepLoaded": false,
+    "tab": ""
+  },
+  {
+    "id": "sh0089",
+    "type": "ui-group",
+    "name": "Event log",
+    "page": "sh0006",
+    "width": "12",
+    "height": "1",
+    "order": 9,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default",
+    "keepLoaded": false,
+    "tab": ""
+  },
+  {
+    "id": "sh0095",
+    "type": "ui-group",
+    "name": "Exterior lights",
+    "page": "sh0007",
+    "width": "6",
+    "height": "1",
+    "order": 10,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default",
+    "keepLoaded": false,
+    "tab": ""
+  },
+  {
+    "id": "sh0108",
+    "type": "ui-group",
+    "name": "Light sensor",
+    "page": "sh0007",
+    "width": "6",
+    "height": "1",
+    "order": 11,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default",
+    "keepLoaded": false,
+    "tab": ""
+  },
+  {
+    "id": "sh0116",
+    "type": "ui-group",
+    "name": "Tracker",
+    "page": "sh0008",
+    "width": "6",
+    "height": "1",
+    "order": 12,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default",
+    "keepLoaded": false,
+    "tab": ""
+  },
+  {
+    "id": "sh0131",
+    "type": "ui-group",
+    "name": "Tracked vs fixed panel",
+    "page": "sh0008",
+    "width": "12",
+    "height": "1",
+    "order": 13,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default",
+    "keepLoaded": false,
+    "tab": ""
+  },
+  {
+    "id": "sh0137",
+    "type": "ui-group",
+    "name": "Nodes",
+    "page": "sh0009",
+    "width": "12",
+    "height": "1",
+    "order": 14,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default",
+    "keepLoaded": false,
+    "tab": ""
+  },
+  {
+    "id": "sh0012",
+    "type": "ui-text",
+    "z": "sh0010",
+    "group": "sh0011",
+    "order": 1,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Climate",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "sh0013",
+    "type": "mqtt in",
+    "z": "sh0010",
+    "name": "",
+    "topic": "home/climate/node1/status",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 100,
+    "wires": [
+      [
+        "sh0012"
+      ]
+    ]
+  },
+  {
+    "id": "sh0014",
+    "type": "ui-text",
+    "z": "sh0010",
+    "group": "sh0011",
+    "order": 2,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Alarm",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 100,
+    "wires": []
+  },
+  {
+    "id": "sh0015",
+    "type": "mqtt in",
+    "z": "sh0010",
+    "name": "",
+    "topic": "home/alarm/node1/status",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 160,
+    "wires": [
+      [
+        "sh0014"
+      ]
+    ]
+  },
+  {
+    "id": "sh0016",
+    "type": "ui-text",
+    "z": "sh0010",
+    "group": "sh0011",
+    "order": 3,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Lighting",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 160,
+    "wires": []
+  },
+  {
+    "id": "sh0017",
+    "type": "mqtt in",
+    "z": "sh0010",
+    "name": "",
+    "topic": "home/lighting/node1/status",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 220,
+    "wires": [
+      [
+        "sh0016"
+      ]
+    ]
+  },
+  {
+    "id": "sh0018",
+    "type": "ui-text",
+    "z": "sh0010",
+    "group": "sh0011",
+    "order": 4,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Solar",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 220,
+    "wires": []
+  },
+  {
+    "id": "sh0019",
+    "type": "mqtt in",
+    "z": "sh0010",
+    "name": "",
+    "topic": "home/solar/node1/status",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 280,
+    "wires": [
+      [
+        "sh0018"
+      ]
+    ]
+  },
+  {
+    "id": "sh0020",
+    "type": "ui-text",
+    "z": "sh0010",
+    "group": "sh0011",
+    "order": 5,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Hub services",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 280,
+    "wires": []
+  },
+  {
+    "id": "sh0021",
+    "type": "mqtt in",
+    "z": "sh0010",
+    "name": "",
+    "topic": "home/hub/jarvis/status",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 340,
+    "wires": [
+      [
+        "sh0020"
+      ]
+    ]
+  },
+  {
+    "id": "sh0023",
+    "type": "ui-text",
+    "z": "sh0010",
+    "group": "sh0022",
+    "order": 1,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Alarm",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 340,
+    "wires": []
+  },
+  {
+    "id": "sh0024",
+    "type": "mqtt in",
+    "z": "sh0010",
+    "name": "",
+    "topic": "home/alarm/node1/state/mode",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 400,
+    "wires": [
+      [
+        "sh0023"
+      ]
+    ]
+  },
+  {
+    "id": "sh0025",
+    "type": "mqtt out",
+    "z": "sh0010",
+    "name": "",
+    "topic": "home/alarm/node1/cmd/mode",
+    "qos": "1",
+    "retain": "false",
+    "respTopic": "",
+    "contentType": "",
+    "userProps": "",
+    "correl": "",
+    "expiry": "",
+    "broker": "sh0001",
+    "x": 670,
+    "y": 400,
+    "wires": []
+  },
+  {
+    "id": "sh0026",
+    "type": "ui-button",
+    "z": "sh0010",
+    "group": "sh0022",
+    "name": "",
+    "label": "Arm",
+    "order": 2,
+    "width": "0",
+    "height": "0",
+    "emulateClick": false,
+    "tooltip": "",
+    "color": "",
+    "bgcolor": "",
+    "className": "",
+    "icon": "",
+    "iconPosition": "left",
+    "payload": "armed",
+    "payloadType": "str",
+    "topic": "topic",
+    "topicType": "msg",
+    "buttonColor": "",
+    "textColor": "",
+    "iconColor": "",
+    "enableClick": true,
+    "enablePointerdown": false,
+    "pointerdownPayload": "",
+    "pointerdownPayloadType": "str",
+    "enablePointerup": false,
+    "pointerupPayload": "",
+    "pointerupPayloadType": "str",
+    "x": 410,
+    "y": 400,
+    "wires": [
+      [
+        "sh0025"
+      ]
+    ]
+  },
+  {
+    "id": "sh0027",
+    "type": "mqtt out",
+    "z": "sh0010",
+    "name": "",
+    "topic": "home/alarm/node1/cmd/mode",
+    "qos": "1",
+    "retain": "false",
+    "respTopic": "",
+    "contentType": "",
+    "userProps": "",
+    "correl": "",
+    "expiry": "",
+    "broker": "sh0001",
+    "x": 670,
+    "y": 400,
+    "wires": []
+  },
+  {
+    "id": "sh0028",
+    "type": "ui-button",
+    "z": "sh0010",
+    "group": "sh0022",
+    "name": "",
+    "label": "Disarm",
+    "order": 3,
+    "width": "0",
+    "height": "0",
+    "emulateClick": false,
+    "tooltip": "",
+    "color": "",
+    "bgcolor": "",
+    "className": "",
+    "icon": "",
+    "iconPosition": "left",
+    "payload": "disarmed",
+    "payloadType": "str",
+    "topic": "topic",
+    "topicType": "msg",
+    "buttonColor": "",
+    "textColor": "",
+    "iconColor": "",
+    "enableClick": true,
+    "enablePointerdown": false,
+    "pointerdownPayload": "",
+    "pointerdownPayloadType": "str",
+    "enablePointerup": false,
+    "pointerupPayload": "",
+    "pointerupPayloadType": "str",
+    "x": 410,
+    "y": 400,
+    "wires": [
+      [
+        "sh0027"
+      ]
+    ]
+  },
+  {
+    "id": "sh0029",
+    "type": "ui-text",
+    "z": "sh0010",
+    "group": "sh0022",
+    "order": 4,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Temperature",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 400,
+    "wires": []
+  },
+  {
+    "id": "sh0030",
+    "type": "function",
+    "z": "sh0010",
+    "name": "format Temperature",
+    "func": "const p = msg.payload;\nmsg.payload = (p) + \" \\u00b0C\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 410,
+    "y": 400,
+    "wires": [
+      [
+        "sh0029"
+      ]
+    ]
+  },
+  {
+    "id": "sh0031",
+    "type": "mqtt in",
+    "z": "sh0010",
+    "name": "",
+    "topic": "home/climate/node1/tele/temp_c",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 460,
+    "wires": [
+      [
+        "sh0030"
+      ]
+    ]
+  },
+  {
+    "id": "sh0032",
+    "type": "ui-text",
+    "z": "sh0010",
+    "group": "sh0022",
+    "order": 5,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Exterior lights",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 460,
+    "wires": []
+  },
+  {
+    "id": "sh0033",
+    "type": "function",
+    "z": "sh0010",
+    "name": "format Exterior lights",
+    "func": "const p = msg.payload;\nmsg.payload = (p == 1 ? 'ON' : 'OFF') + \"\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 410,
+    "y": 460,
+    "wires": [
+      [
+        "sh0032"
+      ]
+    ]
+  },
+  {
+    "id": "sh0034",
+    "type": "mqtt in",
+    "z": "sh0010",
+    "name": "",
+    "topic": "home/lighting/node1/state/power",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 520,
+    "wires": [
+      [
+        "sh0033"
+      ]
+    ]
+  },
+  {
+    "id": "sh0035",
+    "type": "ui-text",
+    "z": "sh0010",
+    "group": "sh0022",
+    "order": 6,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Solar power",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 520,
+    "wires": []
+  },
+  {
+    "id": "sh0036",
+    "type": "function",
+    "z": "sh0010",
+    "name": "format Solar power",
+    "func": "const p = msg.payload;\nmsg.payload = (p) + \" mW\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 410,
+    "y": 520,
+    "wires": [
+      [
+        "sh0035"
+      ]
+    ]
+  },
+  {
+    "id": "sh0037",
+    "type": "mqtt in",
+    "z": "sh0010",
+    "name": "",
+    "topic": "home/solar/node1/tele/panel_mw",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 580,
+    "wires": [
+      [
+        "sh0036"
+      ]
+    ]
+  },
+  {
+    "id": "sh0039",
+    "type": "ui-table",
+    "z": "sh0010",
+    "group": "sh0038",
+    "name": "",
+    "label": "",
+    "order": 1,
+    "width": "0",
+    "height": "0",
+    "maxrows": 5,
+    "passthru": false,
+    "autocols": true,
+    "showSearch": false,
+    "deselect": true,
+    "selectionType": "none",
+    "columns": [],
+    "mobileBreakpoint": "sm",
+    "mobileBreakpointType": "defaults",
+    "action": "replace",
+    "className": "",
+    "x": 670,
+    "y": 580,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "sh0040",
+    "type": "function",
+    "z": "sh0010",
+    "name": "keep last 5",
+    "func": "\nconst list = context.get('alerts') || [];\nconst a = msg.payload;\nlist.unshift({time: new Date().toLocaleTimeString(), type: a.type, message: a.message,\n              sent: (a.channels || []).join('+') || 'none'});\ncontext.set('alerts', list.slice(0, 5));\nmsg.payload = list.slice(0, 5);\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 410,
+    "y": 580,
+    "wires": [
+      [
+        "sh0039"
+      ]
+    ]
+  },
+  {
+    "id": "sh0041",
+    "type": "mqtt in",
+    "z": "sh0010",
+    "name": "",
+    "topic": "home/hub/jarvis/event/alert",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 640,
+    "wires": [
+      [
+        "sh0040"
+      ]
+    ]
+  },
+  {
+    "id": "sh0044",
+    "type": "ui-gauge",
+    "z": "sh0042",
+    "name": "",
+    "group": "sh0043",
+    "order": 1,
+    "value": "payload",
+    "valueType": "msg",
+    "width": "3",
+    "height": "3",
+    "gtype": "gauge-half",
+    "gstyle": "needle",
+    "title": "Temperature",
+    "alwaysShowTitle": false,
+    "floatingTitlePosition": "top-left",
+    "units": "\u00b0C",
+    "icon": "",
+    "prefix": "",
+    "suffix": "",
+    "segments": [
+      {
+        "from": "10",
+        "color": "#5cd65c"
+      },
+      {
+        "from": "34",
+        "color": "#ea5353"
+      }
+    ],
+    "min": 10,
+    "max": 40,
+    "sizeThickness": 16,
+    "sizeGap": 4,
+    "sizeKeyThickness": 8,
+    "styleRounded": true,
+    "styleGlow": false,
+    "className": "",
+    "x": 410,
+    "y": 40,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "sh0045",
+    "type": "mqtt in",
+    "z": "sh0042",
+    "name": "",
+    "topic": "home/climate/node1/tele/temp_c",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 100,
+    "wires": [
+      [
+        "sh0044"
+      ]
+    ]
+  },
+  {
+    "id": "sh0046",
+    "type": "ui-gauge",
+    "z": "sh0042",
+    "name": "",
+    "group": "sh0043",
+    "order": 2,
+    "value": "payload",
+    "valueType": "msg",
+    "width": "3",
+    "height": "3",
+    "gtype": "gauge-half",
+    "gstyle": "needle",
+    "title": "Humidity",
+    "alwaysShowTitle": false,
+    "floatingTitlePosition": "top-left",
+    "units": "%RH",
+    "icon": "",
+    "prefix": "",
+    "suffix": "",
+    "segments": [
+      {
+        "from": "0",
+        "color": "#5cd65c"
+      },
+      {
+        "from": "80",
+        "color": "#ea5353"
+      }
+    ],
+    "min": 0,
+    "max": 100,
+    "sizeThickness": 16,
+    "sizeGap": 4,
+    "sizeKeyThickness": 8,
+    "styleRounded": true,
+    "styleGlow": false,
+    "className": "",
+    "x": 410,
+    "y": 100,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "sh0047",
+    "type": "mqtt in",
+    "z": "sh0042",
+    "name": "",
+    "topic": "home/climate/node1/tele/humidity_pct",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 160,
+    "wires": [
+      [
+        "sh0046"
+      ]
+    ]
+  },
+  {
+    "id": "sh0048",
+    "type": "ui-text",
+    "z": "sh0042",
+    "group": "sh0043",
+    "order": 3,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Heater",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 160,
+    "wires": []
+  },
+  {
+    "id": "sh0049",
+    "type": "function",
+    "z": "sh0042",
+    "name": "format Heater",
+    "func": "const p = msg.payload;\nmsg.payload = (p == 1 ? 'ON' : 'OFF') + \"\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 410,
+    "y": 160,
+    "wires": [
+      [
+        "sh0048"
+      ]
+    ]
+  },
+  {
+    "id": "sh0050",
+    "type": "mqtt in",
+    "z": "sh0042",
+    "name": "",
+    "topic": "home/climate/node1/state/heater",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 220,
+    "wires": [
+      [
+        "sh0049"
+      ]
+    ]
+  },
+  {
+    "id": "sh0051",
+    "type": "ui-text",
+    "z": "sh0042",
+    "group": "sh0043",
+    "order": 4,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Fan",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 220,
+    "wires": []
+  },
+  {
+    "id": "sh0052",
+    "type": "function",
+    "z": "sh0042",
+    "name": "format Fan",
+    "func": "const p = msg.payload;\nmsg.payload = (p) + \" %\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 410,
+    "y": 220,
+    "wires": [
+      [
+        "sh0051"
+      ]
+    ]
+  },
+  {
+    "id": "sh0053",
+    "type": "mqtt in",
+    "z": "sh0042",
+    "name": "",
+    "topic": "home/climate/node1/state/fan",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 280,
+    "wires": [
+      [
+        "sh0052"
+      ]
+    ]
+  },
+  {
+    "id": "sh0055",
+    "type": "mqtt out",
+    "z": "sh0042",
+    "name": "",
+    "topic": "home/climate/node1/cmd/setpoint_c",
+    "qos": "1",
+    "retain": "false",
+    "respTopic": "",
+    "contentType": "",
+    "userProps": "",
+    "correl": "",
+    "expiry": "",
+    "broker": "sh0001",
+    "x": 670,
+    "y": 280,
+    "wires": []
+  },
+  {
+    "id": "sh0056",
+    "type": "ui-slider",
+    "z": "sh0042",
+    "group": "sh0054",
+    "name": "",
+    "label": "Setpoint (\u00b0C)",
+    "tooltip": "",
+    "order": 1,
+    "width": "0",
+    "height": "0",
+    "passthru": false,
+    "outs": "end",
+    "topic": "topic",
+    "topicType": "msg",
+    "thumbLabel": true,
+    "showTicks": "always",
+    "min": 18,
+    "max": 30,
+    "step": 0.5,
+    "className": "",
+    "iconPrepend": "",
+    "iconAppend": "",
+    "color": "",
+    "colorTrack": "",
+    "colorThumb": "",
+    "showTextField": true,
+    "x": 410,
+    "y": 280,
+    "wires": [
+      [
+        "sh0055"
+      ]
+    ]
+  },
+  {
+    "id": "sh0057",
+    "type": "mqtt in",
+    "z": "sh0042",
+    "name": "",
+    "topic": "home/climate/node1/state/setpoint_c",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 340,
+    "wires": [
+      [
+        "sh0056"
+      ]
+    ]
+  },
+  {
+    "id": "sh0058",
+    "type": "mqtt out",
+    "z": "sh0042",
+    "name": "",
+    "topic": "home/climate/node1/cmd/mode",
+    "qos": "1",
+    "retain": "false",
+    "respTopic": "",
+    "contentType": "",
+    "userProps": "",
+    "correl": "",
+    "expiry": "",
+    "broker": "sh0001",
+    "x": 670,
+    "y": 340,
+    "wires": []
+  },
+  {
+    "id": "sh0059",
+    "type": "ui-dropdown",
+    "z": "sh0042",
+    "group": "sh0054",
+    "name": "",
+    "label": "Mode",
+    "tooltip": "",
+    "order": 2,
+    "width": "0",
+    "height": "0",
+    "passthru": false,
+    "multiple": false,
+    "chips": false,
+    "clearable": false,
+    "options": [
+      {
+        "label": "Auto",
+        "value": "auto",
+        "type": "str"
+      },
+      {
+        "label": "Manual",
+        "value": "manual",
+        "type": "str"
+      },
+      {
+        "label": "Off",
+        "value": "off",
+        "type": "str"
+      }
+    ],
+    "payload": "",
+    "topic": "topic",
+    "topicType": "msg",
+    "className": "",
+    "typeIsComboBox": true,
+    "msgTrigger": "onChange",
+    "x": 410,
+    "y": 340,
+    "wires": [
+      [
+        "sh0058"
+      ]
+    ]
+  },
+  {
+    "id": "sh0060",
+    "type": "mqtt in",
+    "z": "sh0042",
+    "name": "",
+    "topic": "home/climate/node1/state/mode",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 400,
+    "wires": [
+      [
+        "sh0059"
+      ]
+    ]
+  },
+  {
+    "id": "sh0061",
+    "type": "mqtt out",
+    "z": "sh0042",
+    "name": "",
+    "topic": "home/climate/node1/cmd/heater",
+    "qos": "1",
+    "retain": "false",
+    "respTopic": "",
+    "contentType": "",
+    "userProps": "",
+    "correl": "",
+    "expiry": "",
+    "broker": "sh0001",
+    "x": 670,
+    "y": 400,
+    "wires": []
+  },
+  {
+    "id": "sh0062",
+    "type": "ui-switch",
+    "z": "sh0042",
+    "name": "",
+    "label": "Heater (manual mode)",
+    "group": "sh0054",
+    "order": 3,
+    "width": "0",
+    "height": "0",
+    "passthru": false,
+    "decouple": true,
+    "topic": "topic",
+    "topicType": "msg",
+    "style": "",
+    "className": "",
+    "layout": "row-spread",
+    "clickableArea": "switch",
+    "onvalue": "1",
+    "onvalueType": "num",
+    "onicon": "",
+    "oncolor": "",
+    "offvalue": "0",
+    "offvalueType": "num",
+    "officon": "",
+    "offcolor": "",
+    "x": 410,
+    "y": 400,
+    "wires": [
+      [
+        "sh0061"
+      ]
+    ]
+  },
+  {
+    "id": "sh0064",
+    "type": "ui-chart",
+    "z": "sh0042",
+    "group": "sh0063",
+    "name": "",
+    "label": "Temperature and humidity",
+    "order": 1,
+    "chartType": "line",
+    "category": "topic",
+    "categoryType": "msg",
+    "xAxisLabel": "",
+    "xAxisProperty": "",
+    "xAxisPropertyType": "timestamp",
+    "xAxisType": "time",
+    "xAxisFormat": "",
+    "xAxisFormatType": "auto",
+    "xmin": "",
+    "xmax": "",
+    "yAxisLabel": "",
+    "yAxisProperty": "payload",
+    "yAxisPropertyType": "msg",
+    "ymin": "",
+    "ymax": "",
+    "bins": 10,
+    "action": "append",
+    "stackSeries": false,
+    "pointShape": "false",
+    "pointRadius": 4,
+    "showLegend": true,
+    "removeOlder": "24",
+    "removeOlderUnit": "3600",
+    "removeOlderPoints": "",
+    "colors": [
+      "#0095FF",
+      "#FF0000",
+      "#FF7F0E",
+      "#2CA02C",
+      "#A347E1",
+      "#D62728",
+      "#FF9896",
+      "#9467BD",
+      "#C5B0D5"
+    ],
+    "textColor": [
+      "#666666"
+    ],
+    "textColorDefault": true,
+    "gridColor": [
+      "#e5e5e5"
+    ],
+    "gridColorDefault": true,
+    "width": "12",
+    "height": "6",
+    "className": "",
+    "interpolation": "linear",
+    "x": 670,
+    "y": 400,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "sh0065",
+    "type": "function",
+    "z": "sh0042",
+    "name": "series name",
+    "func": "\nif (msg.topic.endsWith('temp_c')) msg.topic = 'Temperature (\u00b0C)';\nelse if (msg.topic.endsWith('humidity_pct')) msg.topic = 'Humidity (%RH)';\nelse return null;   // pressure and gas are not on this chart\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 410,
+    "y": 400,
+    "wires": [
+      [
+        "sh0064"
+      ]
+    ]
+  },
+  {
+    "id": "sh0066",
+    "type": "mqtt in",
+    "z": "sh0042",
+    "name": "",
+    "topic": "home/climate/node1/tele/+",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 460,
+    "wires": [
+      [
+        "sh0065"
+      ]
+    ]
+  },
+  {
+    "id": "sh0069",
+    "type": "ui-text",
+    "z": "sh0067",
+    "group": "sh0068",
+    "order": 1,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Mode",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "sh0070",
+    "type": "mqtt in",
+    "z": "sh0067",
+    "name": "",
+    "topic": "home/alarm/node1/state/mode",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 100,
+    "wires": [
+      [
+        "sh0069"
+      ]
+    ]
+  },
+  {
+    "id": "sh0071",
+    "type": "ui-text",
+    "z": "sh0067",
+    "group": "sh0068",
+    "order": 2,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Door",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 100,
+    "wires": []
+  },
+  {
+    "id": "sh0072",
+    "type": "function",
+    "z": "sh0067",
+    "name": "format Door",
+    "func": "const p = msg.payload;\nmsg.payload = (p == 1 ? 'OPEN' : 'closed') + \"\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 410,
+    "y": 100,
+    "wires": [
+      [
+        "sh0071"
+      ]
+    ]
+  },
+  {
+    "id": "sh0073",
+    "type": "mqtt in",
+    "z": "sh0067",
+    "name": "",
+    "topic": "home/alarm/node1/state/door",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 160,
+    "wires": [
+      [
+        "sh0072"
+      ]
+    ]
+  },
+  {
+    "id": "sh0074",
+    "type": "ui-text",
+    "z": "sh0067",
+    "group": "sh0068",
+    "order": 3,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Gas",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 160,
+    "wires": []
+  },
+  {
+    "id": "sh0075",
+    "type": "function",
+    "z": "sh0067",
+    "name": "format Gas",
+    "func": "const p = msg.payload;\nmsg.payload = (p == 1 ? 'DETECTED' : 'clear') + \"\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 410,
+    "y": 160,
+    "wires": [
+      [
+        "sh0074"
+      ]
+    ]
+  },
+  {
+    "id": "sh0076",
+    "type": "mqtt in",
+    "z": "sh0067",
+    "name": "",
+    "topic": "home/alarm/node1/state/gas",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 220,
+    "wires": [
+      [
+        "sh0075"
+      ]
+    ]
+  },
+  {
+    "id": "sh0077",
+    "type": "ui-text",
+    "z": "sh0067",
+    "group": "sh0068",
+    "order": 4,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Buzzer",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 220,
+    "wires": []
+  },
+  {
+    "id": "sh0078",
+    "type": "function",
+    "z": "sh0067",
+    "name": "format Buzzer",
+    "func": "const p = msg.payload;\nmsg.payload = (p == 1 ? 'ON' : 'OFF') + \"\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 410,
+    "y": 220,
+    "wires": [
+      [
+        "sh0077"
+      ]
+    ]
+  },
+  {
+    "id": "sh0079",
+    "type": "mqtt in",
+    "z": "sh0067",
+    "name": "",
+    "topic": "home/alarm/node1/state/buzzer",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 280,
+    "wires": [
+      [
+        "sh0078"
+      ]
+    ]
+  },
+  {
+    "id": "sh0081",
+    "type": "mqtt out",
+    "z": "sh0067",
+    "name": "",
+    "topic": "home/alarm/node1/cmd/mode",
+    "qos": "1",
+    "retain": "false",
+    "respTopic": "",
+    "contentType": "",
+    "userProps": "",
+    "correl": "",
+    "expiry": "",
+    "broker": "sh0001",
+    "x": 670,
+    "y": 280,
+    "wires": []
+  },
+  {
+    "id": "sh0082",
+    "type": "ui-button",
+    "z": "sh0067",
+    "group": "sh0080",
+    "name": "",
+    "label": "Arm",
+    "order": 1,
+    "width": "0",
+    "height": "0",
+    "emulateClick": false,
+    "tooltip": "",
+    "color": "",
+    "bgcolor": "",
+    "className": "",
+    "icon": "",
+    "iconPosition": "left",
+    "payload": "armed",
+    "payloadType": "str",
+    "topic": "topic",
+    "topicType": "msg",
+    "buttonColor": "",
+    "textColor": "",
+    "iconColor": "",
+    "enableClick": true,
+    "enablePointerdown": false,
+    "pointerdownPayload": "",
+    "pointerdownPayloadType": "str",
+    "enablePointerup": false,
+    "pointerupPayload": "",
+    "pointerupPayloadType": "str",
+    "x": 410,
+    "y": 280,
+    "wires": [
+      [
+        "sh0081"
+      ]
+    ]
+  },
+  {
+    "id": "sh0083",
+    "type": "mqtt out",
+    "z": "sh0067",
+    "name": "",
+    "topic": "home/alarm/node1/cmd/mode",
+    "qos": "1",
+    "retain": "false",
+    "respTopic": "",
+    "contentType": "",
+    "userProps": "",
+    "correl": "",
+    "expiry": "",
+    "broker": "sh0001",
+    "x": 670,
+    "y": 280,
+    "wires": []
+  },
+  {
+    "id": "sh0084",
+    "type": "ui-button",
+    "z": "sh0067",
+    "group": "sh0080",
+    "name": "",
+    "label": "Disarm",
+    "order": 2,
+    "width": "0",
+    "height": "0",
+    "emulateClick": false,
+    "tooltip": "",
+    "color": "",
+    "bgcolor": "",
+    "className": "",
+    "icon": "",
+    "iconPosition": "left",
+    "payload": "disarmed",
+    "payloadType": "str",
+    "topic": "topic",
+    "topicType": "msg",
+    "buttonColor": "",
+    "textColor": "",
+    "iconColor": "",
+    "enableClick": true,
+    "enablePointerdown": false,
+    "pointerdownPayload": "",
+    "pointerdownPayloadType": "str",
+    "enablePointerup": false,
+    "pointerupPayload": "",
+    "pointerupPayloadType": "str",
+    "x": 410,
+    "y": 280,
+    "wires": [
+      [
+        "sh0083"
+      ]
+    ]
+  },
+  {
+    "id": "sh0085",
+    "type": "mqtt out",
+    "z": "sh0067",
+    "name": "",
+    "topic": "home/alarm/node1/cmd/silence",
+    "qos": "1",
+    "retain": "false",
+    "respTopic": "",
+    "contentType": "",
+    "userProps": "",
+    "correl": "",
+    "expiry": "",
+    "broker": "sh0001",
+    "x": 670,
+    "y": 280,
+    "wires": []
+  },
+  {
+    "id": "sh0086",
+    "type": "ui-button",
+    "z": "sh0067",
+    "group": "sh0080",
+    "name": "",
+    "label": "Silence buzzer",
+    "order": 3,
+    "width": "0",
+    "height": "0",
+    "emulateClick": false,
+    "tooltip": "",
+    "color": "",
+    "bgcolor": "",
+    "className": "",
+    "icon": "",
+    "iconPosition": "left",
+    "payload": "1",
+    "payloadType": "str",
+    "topic": "topic",
+    "topicType": "msg",
+    "buttonColor": "",
+    "textColor": "",
+    "iconColor": "",
+    "enableClick": true,
+    "enablePointerdown": false,
+    "pointerdownPayload": "",
+    "pointerdownPayloadType": "str",
+    "enablePointerup": false,
+    "pointerupPayload": "",
+    "pointerupPayloadType": "str",
+    "x": 410,
+    "y": 280,
+    "wires": [
+      [
+        "sh0085"
+      ]
+    ]
+  },
+  {
+    "id": "sh0087",
+    "type": "mqtt out",
+    "z": "sh0067",
+    "name": "",
+    "topic": "home/hub/jarvis/cmd/test_alert",
+    "qos": "1",
+    "retain": "false",
+    "respTopic": "",
+    "contentType": "",
+    "userProps": "",
+    "correl": "",
+    "expiry": "",
+    "broker": "sh0001",
+    "x": 670,
+    "y": 280,
+    "wires": []
+  },
+  {
+    "id": "sh0088",
+    "type": "ui-button",
+    "z": "sh0067",
+    "group": "sh0080",
+    "name": "",
+    "label": "Send test alert",
+    "order": 4,
+    "width": "0",
+    "height": "0",
+    "emulateClick": false,
+    "tooltip": "",
+    "color": "",
+    "bgcolor": "",
+    "className": "",
+    "icon": "",
+    "iconPosition": "left",
+    "payload": "dashboard",
+    "payloadType": "str",
+    "topic": "topic",
+    "topicType": "msg",
+    "buttonColor": "",
+    "textColor": "",
+    "iconColor": "",
+    "enableClick": true,
+    "enablePointerdown": false,
+    "pointerdownPayload": "",
+    "pointerdownPayloadType": "str",
+    "enablePointerup": false,
+    "pointerupPayload": "",
+    "pointerupPayloadType": "str",
+    "x": 410,
+    "y": 280,
+    "wires": [
+      [
+        "sh0087"
+      ]
+    ]
+  },
+  {
+    "id": "sh0090",
+    "type": "ui-table",
+    "z": "sh0067",
+    "group": "sh0089",
+    "name": "",
+    "label": "",
+    "order": 1,
+    "width": "0",
+    "height": "0",
+    "maxrows": 10,
+    "passthru": false,
+    "autocols": true,
+    "showSearch": false,
+    "deselect": true,
+    "selectionType": "none",
+    "columns": [],
+    "mobileBreakpoint": "sm",
+    "mobileBreakpointType": "defaults",
+    "action": "replace",
+    "className": "",
+    "x": 670,
+    "y": 280,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "sh0091",
+    "type": "function",
+    "z": "sh0067",
+    "name": "event log",
+    "func": "\n// Live changes only: skip retained replays and the duplicate copy the broker\n// sends because state/# and event/# overlap other subscriptions on this connection.\nif (msg.retain) return null;\nconst key = msg.topic + '=' + msg.payload, now = Date.now();\nconst last = context.get('last') || {};\nif (last.key === key && now - last.t < 500) return null;\ncontext.set('last', {key: key, t: now});\nconst list = context.get('ev') || [];\nlist.unshift({time: new Date().toLocaleTimeString(), topic: msg.topic.split('/').slice(3).join('/'),\n              value: String(msg.payload)});\ncontext.set('ev', list.slice(0, 50));\nmsg.payload = list.slice(0, 50);\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 410,
+    "y": 280,
+    "wires": [
+      [
+        "sh0090"
+      ]
+    ]
+  },
+  {
+    "id": "sh0092",
+    "type": "mqtt in",
+    "z": "sh0067",
+    "name": "",
+    "topic": "home/alarm/node1/event/#",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 340,
+    "wires": [
+      [
+        "sh0091"
+      ]
+    ]
+  },
+  {
+    "id": "sh0093",
+    "type": "mqtt in",
+    "z": "sh0067",
+    "name": "",
+    "topic": "home/alarm/node1/state/#",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 400,
+    "wires": [
+      [
+        "sh0091"
+      ]
+    ]
+  },
+  {
+    "id": "sh0096",
+    "type": "mqtt out",
+    "z": "sh0094",
+    "name": "",
+    "topic": "home/lighting/node1/cmd/power",
+    "qos": "1",
+    "retain": "false",
+    "respTopic": "",
+    "contentType": "",
+    "userProps": "",
+    "correl": "",
+    "expiry": "",
+    "broker": "sh0001",
+    "x": 670,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "sh0097",
+    "type": "ui-switch",
+    "z": "sh0094",
+    "name": "",
+    "label": "Lights",
+    "group": "sh0095",
+    "order": 1,
+    "width": "0",
+    "height": "0",
+    "passthru": false,
+    "decouple": false,
+    "topic": "topic",
+    "topicType": "msg",
+    "style": "",
+    "className": "",
+    "layout": "row-spread",
+    "clickableArea": "switch",
+    "onvalue": "1",
+    "onvalueType": "num",
+    "onicon": "",
+    "oncolor": "",
+    "offvalue": "0",
+    "offvalueType": "num",
+    "officon": "",
+    "offcolor": "",
+    "x": 410,
+    "y": 40,
+    "wires": [
+      [
+        "sh0096"
+      ]
+    ]
+  },
+  {
+    "id": "sh0098",
+    "type": "mqtt in",
+    "z": "sh0094",
+    "name": "",
+    "topic": "home/lighting/node1/state/power",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 100,
+    "wires": [
+      [
+        "sh0097"
+      ]
+    ]
+  },
+  {
+    "id": "sh0099",
+    "type": "mqtt out",
+    "z": "sh0094",
+    "name": "",
+    "topic": "home/lighting/node1/cmd/mode",
+    "qos": "1",
+    "retain": "false",
+    "respTopic": "",
+    "contentType": "",
+    "userProps": "",
+    "correl": "",
+    "expiry": "",
+    "broker": "sh0001",
+    "x": 670,
+    "y": 100,
+    "wires": []
+  },
+  {
+    "id": "sh0100",
+    "type": "ui-switch",
+    "z": "sh0094",
+    "name": "",
+    "label": "Automatic (motion + dusk)",
+    "group": "sh0095",
+    "order": 2,
+    "width": "0",
+    "height": "0",
+    "passthru": false,
+    "decouple": false,
+    "topic": "topic",
+    "topicType": "msg",
+    "style": "",
+    "className": "",
+    "layout": "row-spread",
+    "clickableArea": "switch",
+    "onvalue": "auto",
+    "onvalueType": "str",
+    "onicon": "",
+    "oncolor": "",
+    "offvalue": "manual",
+    "offvalueType": "str",
+    "officon": "",
+    "offcolor": "",
+    "x": 410,
+    "y": 100,
+    "wires": [
+      [
+        "sh0099"
+      ]
+    ]
+  },
+  {
+    "id": "sh0101",
+    "type": "mqtt in",
+    "z": "sh0094",
+    "name": "",
+    "topic": "home/lighting/node1/state/mode",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 160,
+    "wires": [
+      [
+        "sh0100"
+      ]
+    ]
+  },
+  {
+    "id": "sh0102",
+    "type": "mqtt out",
+    "z": "sh0094",
+    "name": "",
+    "topic": "home/lighting/node1/cmd/brightness",
+    "qos": "1",
+    "retain": "false",
+    "respTopic": "",
+    "contentType": "",
+    "userProps": "",
+    "correl": "",
+    "expiry": "",
+    "broker": "sh0001",
+    "x": 670,
+    "y": 160,
+    "wires": []
+  },
+  {
+    "id": "sh0103",
+    "type": "ui-slider",
+    "z": "sh0094",
+    "group": "sh0095",
+    "name": "",
+    "label": "Brightness (%)",
+    "tooltip": "",
+    "order": 3,
+    "width": "0",
+    "height": "0",
+    "passthru": false,
+    "outs": "end",
+    "topic": "topic",
+    "topicType": "msg",
+    "thumbLabel": true,
+    "showTicks": "always",
+    "min": 0,
+    "max": 100,
+    "step": 5,
+    "className": "",
+    "iconPrepend": "",
+    "iconAppend": "",
+    "color": "",
+    "colorTrack": "",
+    "colorThumb": "",
+    "showTextField": false,
+    "x": 410,
+    "y": 160,
+    "wires": [
+      [
+        "sh0102"
+      ]
+    ]
+  },
+  {
+    "id": "sh0104",
+    "type": "mqtt in",
+    "z": "sh0094",
+    "name": "",
+    "topic": "home/lighting/node1/state/brightness",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 220,
+    "wires": [
+      [
+        "sh0103"
+      ]
+    ]
+  },
+  {
+    "id": "sh0105",
+    "type": "mqtt out",
+    "z": "sh0094",
+    "name": "",
+    "topic": "home/lighting/node1/cmd/color",
+    "qos": "1",
+    "retain": "false",
+    "respTopic": "",
+    "contentType": "",
+    "userProps": "",
+    "correl": "",
+    "expiry": "",
+    "broker": "sh0001",
+    "x": 670,
+    "y": 220,
+    "wires": []
+  },
+  {
+    "id": "sh0106",
+    "type": "ui-dropdown",
+    "z": "sh0094",
+    "group": "sh0095",
+    "name": "",
+    "label": "Color",
+    "tooltip": "",
+    "order": 4,
+    "width": "0",
+    "height": "0",
+    "passthru": false,
+    "multiple": false,
+    "chips": false,
+    "clearable": false,
+    "options": [
+      {
+        "label": "Warm white",
+        "value": "#FFB46B",
+        "type": "str"
+      },
+      {
+        "label": "Cool white",
+        "value": "#FFFFFF",
+        "type": "str"
+      },
+      {
+        "label": "Red",
+        "value": "#FF0000",
+        "type": "str"
+      },
+      {
+        "label": "Green",
+        "value": "#00FF00",
+        "type": "str"
+      },
+      {
+        "label": "Blue",
+        "value": "#0000FF",
+        "type": "str"
+      },
+      {
+        "label": "Amber",
+        "value": "#FFA000",
+        "type": "str"
+      }
+    ],
+    "payload": "",
+    "topic": "topic",
+    "topicType": "msg",
+    "className": "",
+    "typeIsComboBox": true,
+    "msgTrigger": "onChange",
+    "x": 410,
+    "y": 220,
+    "wires": [
+      [
+        "sh0105"
+      ]
+    ]
+  },
+  {
+    "id": "sh0107",
+    "type": "mqtt in",
+    "z": "sh0094",
+    "name": "",
+    "topic": "home/lighting/node1/state/color",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 280,
+    "wires": [
+      [
+        "sh0106"
+      ]
+    ]
+  },
+  {
+    "id": "sh0109",
+    "type": "ui-text",
+    "z": "sh0094",
+    "group": "sh0108",
+    "order": 1,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Outdoor light",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 280,
+    "wires": []
+  },
+  {
+    "id": "sh0110",
+    "type": "function",
+    "z": "sh0094",
+    "name": "format Outdoor light",
+    "func": "const p = msg.payload;\nmsg.payload = (p) + \" lux\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 410,
+    "y": 280,
+    "wires": [
+      [
+        "sh0109"
+      ]
+    ]
+  },
+  {
+    "id": "sh0111",
+    "type": "mqtt in",
+    "z": "sh0094",
+    "name": "",
+    "topic": "home/lighting/node1/tele/lux",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 340,
+    "wires": [
+      [
+        "sh0110"
+      ]
+    ]
+  },
+  {
+    "id": "sh0112",
+    "type": "mqtt out",
+    "z": "sh0094",
+    "name": "",
+    "topic": "home/lighting/node1/cmd/lux_threshold",
+    "qos": "1",
+    "retain": "false",
+    "respTopic": "",
+    "contentType": "",
+    "userProps": "",
+    "correl": "",
+    "expiry": "",
+    "broker": "sh0001",
+    "x": 670,
+    "y": 340,
+    "wires": []
+  },
+  {
+    "id": "sh0113",
+    "type": "ui-slider",
+    "z": "sh0094",
+    "group": "sh0108",
+    "name": "",
+    "label": "Dusk threshold (lux)",
+    "tooltip": "",
+    "order": 2,
+    "width": "0",
+    "height": "0",
+    "passthru": false,
+    "outs": "end",
+    "topic": "topic",
+    "topicType": "msg",
+    "thumbLabel": true,
+    "showTicks": "always",
+    "min": 0,
+    "max": 500,
+    "step": 10,
+    "className": "",
+    "iconPrepend": "",
+    "iconAppend": "",
+    "color": "",
+    "colorTrack": "",
+    "colorThumb": "",
+    "showTextField": true,
+    "x": 410,
+    "y": 340,
+    "wires": [
+      [
+        "sh0112"
+      ]
+    ]
+  },
+  {
+    "id": "sh0114",
+    "type": "mqtt in",
+    "z": "sh0094",
+    "name": "",
+    "topic": "home/lighting/node1/state/lux_threshold",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 400,
+    "wires": [
+      [
+        "sh0113"
+      ]
+    ]
+  },
+  {
+    "id": "sh0117",
+    "type": "ui-text",
+    "z": "sh0115",
+    "group": "sh0116",
+    "order": 1,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Mode",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "sh0118",
+    "type": "mqtt in",
+    "z": "sh0115",
+    "name": "",
+    "topic": "home/solar/node1/state/mode",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 100,
+    "wires": [
+      [
+        "sh0117"
+      ]
+    ]
+  },
+  {
+    "id": "sh0119",
+    "type": "ui-text",
+    "z": "sh0115",
+    "group": "sh0116",
+    "order": 2,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Pan",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 100,
+    "wires": []
+  },
+  {
+    "id": "sh0120",
+    "type": "function",
+    "z": "sh0115",
+    "name": "format Pan",
+    "func": "const p = msg.payload;\nmsg.payload = (p) + \"\\u00b0\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 410,
+    "y": 100,
+    "wires": [
+      [
+        "sh0119"
+      ]
+    ]
+  },
+  {
+    "id": "sh0121",
+    "type": "mqtt in",
+    "z": "sh0115",
+    "name": "",
+    "topic": "home/solar/node1/state/pan_deg",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 160,
+    "wires": [
+      [
+        "sh0120"
+      ]
+    ]
+  },
+  {
+    "id": "sh0122",
+    "type": "ui-text",
+    "z": "sh0115",
+    "group": "sh0116",
+    "order": 3,
+    "width": "0",
+    "height": "0",
+    "name": "",
+    "label": "Tilt",
+    "format": "{{msg.payload}}",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": 16,
+    "color": "#717171",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 410,
+    "y": 160,
+    "wires": []
+  },
+  {
+    "id": "sh0123",
+    "type": "function",
+    "z": "sh0115",
+    "name": "format Tilt",
+    "func": "const p = msg.payload;\nmsg.payload = (p) + \"\\u00b0\";\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 410,
+    "y": 160,
+    "wires": [
+      [
+        "sh0122"
+      ]
+    ]
+  },
+  {
+    "id": "sh0124",
+    "type": "mqtt in",
+    "z": "sh0115",
+    "name": "",
+    "topic": "home/solar/node1/state/tilt_deg",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 220,
+    "wires": [
+      [
+        "sh0123"
+      ]
+    ]
+  },
+  {
+    "id": "sh0125",
+    "type": "mqtt out",
+    "z": "sh0115",
+    "name": "",
+    "topic": "home/solar/node1/cmd/mode",
+    "qos": "1",
+    "retain": "false",
+    "respTopic": "",
+    "contentType": "",
+    "userProps": "",
+    "correl": "",
+    "expiry": "",
+    "broker": "sh0001",
+    "x": 670,
+    "y": 220,
+    "wires": []
+  },
+  {
+    "id": "sh0126",
+    "type": "ui-dropdown",
+    "z": "sh0115",
+    "group": "sh0116",
+    "name": "",
+    "label": "Set mode",
+    "tooltip": "",
+    "order": 4,
+    "width": "0",
+    "height": "0",
+    "passthru": false,
+    "multiple": false,
+    "chips": false,
+    "clearable": false,
+    "options": [
+      {
+        "label": "Track",
+        "value": "track",
+        "type": "str"
+      },
+      {
+        "label": "Park",
+        "value": "park",
+        "type": "str"
+      },
+      {
+        "label": "Manual",
+        "value": "manual",
+        "type": "str"
+      }
+    ],
+    "payload": "",
+    "topic": "topic",
+    "topicType": "msg",
+    "className": "",
+    "typeIsComboBox": true,
+    "msgTrigger": "onChange",
+    "x": 410,
+    "y": 220,
+    "wires": [
+      [
+        "sh0125"
+      ]
+    ]
+  },
+  {
+    "id": "sh0127",
+    "type": "mqtt out",
+    "z": "sh0115",
+    "name": "",
+    "topic": "home/solar/node1/cmd/pan_deg",
+    "qos": "1",
+    "retain": "false",
+    "respTopic": "",
+    "contentType": "",
+    "userProps": "",
+    "correl": "",
+    "expiry": "",
+    "broker": "sh0001",
+    "x": 670,
+    "y": 220,
+    "wires": []
+  },
+  {
+    "id": "sh0128",
+    "type": "ui-slider",
+    "z": "sh0115",
+    "group": "sh0116",
+    "name": "",
+    "label": "Manual pan (\u00b0)",
+    "tooltip": "",
+    "order": 5,
+    "width": "0",
+    "height": "0",
+    "passthru": false,
+    "outs": "end",
+    "topic": "topic",
+    "topicType": "msg",
+    "thumbLabel": true,
+    "showTicks": "always",
+    "min": 0,
+    "max": 180,
+    "step": 5,
+    "className": "",
+    "iconPrepend": "",
+    "iconAppend": "",
+    "color": "",
+    "colorTrack": "",
+    "colorThumb": "",
+    "showTextField": false,
+    "x": 410,
+    "y": 220,
+    "wires": [
+      [
+        "sh0127"
+      ]
+    ]
+  },
+  {
+    "id": "sh0129",
+    "type": "mqtt out",
+    "z": "sh0115",
+    "name": "",
+    "topic": "home/solar/node1/cmd/tilt_deg",
+    "qos": "1",
+    "retain": "false",
+    "respTopic": "",
+    "contentType": "",
+    "userProps": "",
+    "correl": "",
+    "expiry": "",
+    "broker": "sh0001",
+    "x": 670,
+    "y": 220,
+    "wires": []
+  },
+  {
+    "id": "sh0130",
+    "type": "ui-slider",
+    "z": "sh0115",
+    "group": "sh0116",
+    "name": "",
+    "label": "Manual tilt (\u00b0)",
+    "tooltip": "",
+    "order": 6,
+    "width": "0",
+    "height": "0",
+    "passthru": false,
+    "outs": "end",
+    "topic": "topic",
+    "topicType": "msg",
+    "thumbLabel": true,
+    "showTicks": "always",
+    "min": 0,
+    "max": 180,
+    "step": 5,
+    "className": "",
+    "iconPrepend": "",
+    "iconAppend": "",
+    "color": "",
+    "colorTrack": "",
+    "colorThumb": "",
+    "showTextField": false,
+    "x": 410,
+    "y": 220,
+    "wires": [
+      [
+        "sh0129"
+      ]
+    ]
+  },
+  {
+    "id": "sh0132",
+    "type": "ui-chart",
+    "z": "sh0115",
+    "group": "sh0131",
+    "name": "",
+    "label": "Panel power (mW)",
+    "order": 1,
+    "chartType": "line",
+    "category": "topic",
+    "categoryType": "msg",
+    "xAxisLabel": "",
+    "xAxisProperty": "",
+    "xAxisPropertyType": "timestamp",
+    "xAxisType": "time",
+    "xAxisFormat": "",
+    "xAxisFormatType": "auto",
+    "xmin": "",
+    "xmax": "",
+    "yAxisLabel": "mW",
+    "yAxisProperty": "payload",
+    "yAxisPropertyType": "msg",
+    "ymin": "",
+    "ymax": "",
+    "bins": 10,
+    "action": "append",
+    "stackSeries": false,
+    "pointShape": "false",
+    "pointRadius": 4,
+    "showLegend": true,
+    "removeOlder": "12",
+    "removeOlderUnit": "3600",
+    "removeOlderPoints": "",
+    "colors": [
+      "#0095FF",
+      "#FF0000",
+      "#FF7F0E",
+      "#2CA02C",
+      "#A347E1",
+      "#D62728",
+      "#FF9896",
+      "#9467BD",
+      "#C5B0D5"
+    ],
+    "textColor": [
+      "#666666"
+    ],
+    "textColorDefault": true,
+    "gridColor": [
+      "#e5e5e5"
+    ],
+    "gridColorDefault": true,
+    "width": "12",
+    "height": "6",
+    "className": "",
+    "interpolation": "linear",
+    "x": 670,
+    "y": 220,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "sh0133",
+    "type": "function",
+    "z": "sh0115",
+    "name": "series name",
+    "func": "\nmsg.topic = msg.topic.endsWith('ref_mw') ? 'Fixed panel' : 'Tracking panel';\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 410,
+    "y": 220,
+    "wires": [
+      [
+        "sh0132"
+      ]
+    ]
+  },
+  {
+    "id": "sh0134",
+    "type": "mqtt in",
+    "z": "sh0115",
+    "name": "",
+    "topic": "home/solar/node1/tele/panel_mw",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 280,
+    "wires": [
+      [
+        "sh0133"
+      ]
+    ]
+  },
+  {
+    "id": "sh0135",
+    "type": "mqtt in",
+    "z": "sh0115",
+    "name": "",
+    "topic": "home/solar/node1/tele/ref_mw",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 340,
+    "wires": [
+      [
+        "sh0133"
+      ]
+    ]
+  },
+  {
+    "id": "sh0138",
+    "type": "ui-table",
+    "z": "sh0136",
+    "group": "sh0137",
+    "name": "",
+    "label": "",
+    "order": 1,
+    "width": "0",
+    "height": "0",
+    "maxrows": 0,
+    "passthru": false,
+    "autocols": true,
+    "showSearch": false,
+    "deselect": true,
+    "selectionType": "none",
+    "columns": [],
+    "mobileBreakpoint": "sm",
+    "mobileBreakpointType": "defaults",
+    "action": "replace",
+    "className": "",
+    "x": 670,
+    "y": 40,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "sh0139",
+    "type": "function",
+    "z": "sh0136",
+    "name": "node table",
+    "func": "\nconst t = context.get('t') || {};\nconst [, sub, nodeId, , name] = msg.topic.split('/');\nconst key = sub + '/' + nodeId;\nt[key] = t[key] || {node: key, status: '?', uptime_s: '', rssi_dbm: '', free_heap: ''};\nif (msg.topic.endsWith('/status')) t[key].status = msg.payload;\nelse t[key][name] = msg.payload;\nt[key].updated = new Date().toLocaleTimeString();\ncontext.set('t', t);\nmsg.payload = Object.values(t);\nreturn msg;",
+    "outputs": 1,
+    "timeout": 0,
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 410,
+    "y": 40,
+    "wires": [
+      [
+        "sh0138"
+      ]
+    ]
+  },
+  {
+    "id": "sh0140",
+    "type": "mqtt in",
+    "z": "sh0136",
+    "name": "",
+    "topic": "home/+/+/status",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 100,
+    "wires": [
+      [
+        "sh0139"
+      ]
+    ]
+  },
+  {
+    "id": "sh0141",
+    "type": "mqtt in",
+    "z": "sh0136",
+    "name": "",
+    "topic": "home/+/+/tele/uptime_s",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 160,
+    "wires": [
+      [
+        "sh0139"
+      ]
+    ]
+  },
+  {
+    "id": "sh0142",
+    "type": "mqtt in",
+    "z": "sh0136",
+    "name": "",
+    "topic": "home/+/+/tele/rssi_dbm",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 220,
+    "wires": [
+      [
+        "sh0139"
+      ]
+    ]
+  },
+  {
+    "id": "sh0143",
+    "type": "mqtt in",
+    "z": "sh0136",
+    "name": "",
+    "topic": "home/+/+/tele/free_heap",
+    "qos": "1",
+    "datatype": "auto-detect",
+    "broker": "sh0001",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 150,
+    "y": 280,
+    "wires": [
+      [
+        "sh0139"
+      ]
+    ]
+  }
+]

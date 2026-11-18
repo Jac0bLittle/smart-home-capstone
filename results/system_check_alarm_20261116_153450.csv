@@ -1,0 +1,16 @@
+node,check,result,detail
+alarm,node online,PASS,
+alarm,ping/pong (50 ms),PASS,
+alarm,arm command -> state armed,PASS,
+alarm,motion event published,PASS,
+alarm,one detection alone does not trigger,PASS,
+alarm,door open is published,PASS,
+alarm,second detection triggers the alarm,PASS,
+alarm,buzzer on,PASS,
+alarm,hub sends intruder alert,PASS,
+alarm,alert record has push_ms,PASS,"{""type"": ""Intruder"", ""source"": ""alarm"", ""message"": ""Alarm triggered: two detections while armed (door and/or motion)."", ""channels"": [], ""push_ms"": 0}"
+alarm,silence turns buzzer off,PASS,
+alarm,disarm,PASS,
+alarm,gas over threshold (3 samples) -> state/gas 1,PASS,
+alarm,hub sends gas alert,PASS,
+alarm,gas clears -> state/gas 0,PASS,

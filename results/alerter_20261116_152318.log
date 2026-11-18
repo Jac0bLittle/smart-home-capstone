@@ -1,0 +1,2 @@
+2026-11-16T15:25:03-05:00 jarvis python3[3496]: 2026-11-16 15:25:03 DRY_RUN push: Smart Home: climate node offline - The climate node has been offline for over 60 s.
+2026-11-16T15:25:03-05:00 jarvis python3[3496]: 2026-11-16 15:25:03 ALERT climate node offline: The climate node has been offline for over 60 s. (push handed off in 0 ms, sent: none)

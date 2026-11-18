@@ -1,0 +1,17 @@
+[Unit]
+Description=Smart Home alert service (ntfy + email)
+After=network-online.target mosquitto.service
+Wants=network-online.target
+Requires=mosquitto.service
+
+[Service]
+Type=simple
+User=smarthome
+EnvironmentFile=/etc/smarthome/hub.env
+WorkingDirectory=/opt/smarthome/services
+ExecStart=/usr/bin/python3 -u /opt/smarthome/services/alerter.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

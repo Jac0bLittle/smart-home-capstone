@@ -1,0 +1,12 @@
+time,topic,payload,retained
+20:44:07.206,status,online,1
+20:44:07.206,state/mode,auto,1
+20:44:07.206,state/power,0,1
+20:44:07.206,state/brightness,80,1
+20:44:07.206,state/color,#FFFFFF,1
+20:44:07.206,state/lux_threshold,50,1
+20:44:08.404,tele/uptime_s,9,0
+20:44:10.248,tele/lux,374,0
+20:44:18.404,tele/uptime_s,19,0
+20:44:18.578,tele/lux,412,0
+20:44:19.576,tele/lux,517,0

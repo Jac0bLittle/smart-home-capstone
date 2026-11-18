@@ -1,0 +1,6 @@
+ACL test (testbench/acl_test.py), run by Jacob on jarvis, 2026-11-16 around 16:00 EST.
+Result as Jacob reported it: all checks passed. The screenshot could not be attached.
+acl_test.py prints to the terminal only and writes no CSV. The Nov 8 container run
+had 21 checks (21/21): 4 node logins x (right password, wrong password refused, own branch,
+not another's branch publish, not another's branch read) + anonymous refused.
+To keep a file next time: python3 acl_test.py | tee acl_results.txt

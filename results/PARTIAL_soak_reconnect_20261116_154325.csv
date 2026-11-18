@@ -1,0 +1,4 @@
+time,node,what,value
+15:43:25.125,hub/jarvis,status(ret),online
+15:43:25.125,climate/node1,status(ret),offline
+15:43:25.125,alarm/node1,status(ret),online

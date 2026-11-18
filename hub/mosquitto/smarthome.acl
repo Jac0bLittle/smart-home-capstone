@@ -1,0 +1,29 @@
+# Smart Home Model - topic access per login (least privilege).
+# A node can only read/write its own subsystem branch, so a faulty or
+# compromised node cannot fake another subsystem's alarm (Fernandes [12]).
+# Nodes may also read the hub's online/offline status (the climate node turns a
+# manual heater off when the hub is gone).
+
+user hub
+topic readwrite home/#
+topic read $SYS/#
+
+user climate
+topic readwrite home/climate/#
+topic read home/hub/jarvis/status
+
+user alarm
+topic readwrite home/alarm/#
+topic read home/hub/jarvis/status
+
+user lighting
+topic readwrite home/lighting/#
+topic read home/hub/jarvis/status
+
+user solar
+topic readwrite home/solar/#
+topic read home/hub/jarvis/status
+
+# Test bench (RPi 4B / laptop). Disable this login for the final demo.
+user tester
+topic readwrite home/#
