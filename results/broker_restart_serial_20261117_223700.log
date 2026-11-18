@@ -1,0 +1,9 @@
+22:38:40 [6881.9] hub is offline
+22:38:41 [6883.1] link down (wifi up)
+22:38:41 [6883.1] MQTT connect to 192.168.0.10:1883 as lighting ...
+22:38:41 [6883087][E][WiFiClient.cpp:275] connect(): socket error on fd 49, errno: 104, "Connection reset by peer"
+22:38:41 [6883.1] MQTT connect failed: err -3, rc 0; retry in 1000 ms
+22:38:43 [6885.1] MQTT connect to 192.168.0.10:1883 as lighting ...
+22:38:43 [6885.1] reconnected after 2049 ms (#4)
+22:38:43 [6885.2] hub is online
+seen reconnect: True

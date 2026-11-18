@@ -1,0 +1,8 @@
+20:39:26.259  >> s2
+20:39:26.263  scenario s2 start
+20:39:26.265  t=943 motion pulse
+20:40:06.363  t=40943 motion pulse
+20:40:46.462  t=80943 motion pulse
+20:40:50.302  >> x
+20:40:50.307  t=84777 door closed
+20:40:50.308  idle

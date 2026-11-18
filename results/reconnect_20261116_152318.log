@@ -1,0 +1,9 @@
+watching (Ctrl+C to stop); log -> reconnect_20261116_152318.csv
+15:23:18.199  hub/jarvis       status(ret)    online
+15:23:18.199  climate/node1    status(ret)    online
+15:24:03.035  climate/node1    OFFLINE        
+15:25:08.047  climate/node1    ONLINE         after 65.0 s offline
+15:25:08.087  climate/node1    reconnect_ms   72353
+15:25:23.783  climate/node1    OFFLINE        
+15:25:23.793  climate/node1    ONLINE         after 0.0 s offline
+15:25:23.820  climate/node1    reconnect_ms   497

@@ -1,0 +1,6 @@
+watching (Ctrl+C to stop); log -> soak_reconnect_20261116_160845.csv
+16:08:46.102  hub/jarvis       status(ret)    online
+16:08:46.102  climate/node1    status(ret)    offline
+16:08:46.102  alarm/node1      status(ret)    offline
+16:08:46.102  lighting/node1   status(ret)    offline
+16:08:46.102  solar/node1      status(ret)    online

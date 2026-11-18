@@ -1,0 +1,12 @@
+node,check,result,detail
+solar,node online,PASS,
+solar,ping/pong (50 ms),PASS,
+solar,tracks sun to pan ~150,PASS,149
+solar,tracks sun to tilt ~70,PASS,68
+solar,holds still inside the dead band,PASS,
+solar,stops at travel limit (170),PASS,170
+solar,power telemetry (tracked vs fixed),PASS,498 vs 43
+solar,low light -> event/low_light 1 (10 s),PASS,
+solar,park -> pan 90,PASS,90
+solar,manual pan 30,PASS,
+solar,manual angle switches mode to manual,PASS,

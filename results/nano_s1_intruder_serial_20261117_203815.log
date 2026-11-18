@@ -1,0 +1,7 @@
+20:38:30.331  >> s1
+20:38:30.335  scenario s1 start
+20:38:30.337  t=943 door OPEN
+20:38:33.344  t=3943 motion pulse
+20:38:33.386  react_ms 41 (motion -> ESP32 LED on)
+20:38:45.374  t=15943 door closed
+20:38:45.375  s1 done

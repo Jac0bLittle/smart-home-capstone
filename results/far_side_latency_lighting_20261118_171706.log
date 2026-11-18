@@ -1,0 +1,5 @@
+pinging lighting x200 every 1.0s ...
+received 200/200  loss 0.0%
+RTT ms  min 11.9  median 21.5  p95 43.5  max 91.0
+one-way estimate (RTT/2): median 10.8 ms
+samples written to far_side_latency_lighting_20261118_171706.csv

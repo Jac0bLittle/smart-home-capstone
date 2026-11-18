@@ -1,0 +1,6 @@
+time,node,what,value
+20:53:20.688,hub/jarvis,status(ret),online
+20:53:20.688,climate/node1,status(ret),offline
+20:53:20.688,alarm/node1,status(ret),offline
+20:53:20.689,lighting/node1,status(ret),online
+20:53:20.689,solar/node1,status(ret),offline

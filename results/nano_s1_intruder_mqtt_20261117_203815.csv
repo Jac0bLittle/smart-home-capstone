@@ -1,0 +1,25 @@
+time,topic,payload,retained
+20:38:18.599,status,online,1
+20:38:18.599,state/mode,disarmed,1
+20:38:18.599,state/door,0,1
+20:38:18.599,state/gas,0,1
+20:38:18.599,state/buzzer,0,1
+20:38:19.599,cmd/mode,armed,0
+20:38:19.610,state/mode,armed,0
+20:38:23.079,tele/uptime_s,209,0
+20:38:23.899,tele/gas_raw,400,0
+20:38:32.861,state/door,1,0
+20:38:33.075,tele/uptime_s,219,0
+20:38:33.898,tele/gas_raw,400,0
+20:38:35.816,event/motion,1,0
+20:38:35.829,event/trigger,motion,0
+20:38:35.838,state/mode,triggered,0
+20:38:35.848,state/buzzer,1,0
+20:38:35.951,home/hub/jarvis/event/alert,"{""type"": ""Intruder"", ""source"": ""alarm"", ""message"": ""Alarm triggered: two detections while armed (door and/or motion)."", ""channels"": [""push""], ""push_ms"": 112}",0
+20:38:43.076,tele/uptime_s,229,0
+20:38:43.896,tele/gas_raw,400,0
+20:38:47.896,state/door,0,0
+20:38:53.078,tele/uptime_s,239,0
+20:38:53.084,tele/rssi_dbm,-18,0
+20:38:53.093,tele/free_heap,245624,0
+20:38:53.901,tele/gas_raw,400,0
