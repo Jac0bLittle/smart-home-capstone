@@ -22,7 +22,8 @@ Hardware: Raspberry Pi 5 8 GB as a stand-in for `jarvis` (192.168.0.10), Raspber
 | 14 | Soak | 0 unplanned reconnects in 1 h; free_heap ±5 kB; log < 20 MB/day | Pass | 66.7 min on the lighting node (shortened from 3 h); 400/400 pings, 0 lost; RTT median 14 ms, p95 21 ms (max 32 ms); 0 reconnects, no reboot; free_heap 248,076 → 247,428 B (min 243,492, −4.6 kB); RSSI −17 to −13 dBm; log.db +233 kB → about 5.0 MB/day |
 | 10a | Reconnect after a forced socket drop (`drop` on the serial console) | back < 5 s | Pass | 3 runs: 53, 51, 49 ms; 0 messages dropped |
 | 10b | Reconnect after a Mosquitto restart | back < 10 s | Pass | 2,049 ms (first retry refused while the broker started, second connected) |
-| 7, 8 | Far-side latency and RSSI | | Not run | for the next session |
+| 7 | Far-side latency (ESP32 on a wall charger across the apartment) | median < 50 ms, p95 < 150 ms, 0 loss | Pass | 200/200 pings, 0 lost; median 21.5 ms, p95 43.5 ms, min 11.9 ms, max 91.0 ms |
+| 8 | Far-side RSSI | link stays up | Pass | −58 / −58 / −55 dBm (min / median / max, 3 samples); 0 reconnects in the 3.5-minute run (near the router: −21 to −13 dBm) |
 
 Solar tracking, simulated sun: during a 5-minute sweep, pan followed the sun from 31° to 149° and back, and the tracked panel averaged 24.5% more power than the fixed reference panel (62 of 62 samples at or above it). These panel numbers are simulated until real LDRs and INA219s are wired.
 
