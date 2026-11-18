@@ -1,0 +1,19 @@
+22:36:06 [6728.1] lighting-node1 wifi=1 mqtt=1 hub=1 rssi=-14 reconnects=0 dropped=0 heap=250596
+22:36:06 [6728.1] lighting: mode auto, power 0, brightness 80, color #FFFFFF, lux 492 (thr 375, dark 0), last motion 6410s ago
+== drop run 1
+22:36:07 [6729.1] link down (wifi up)
+22:36:07 [6729.1] MQTT connect to 192.168.0.10:1883 as lighting ...
+22:36:07 [6729.2] reconnected after 53 ms (#1)
+22:36:08 [6729.3] hub is online
+== drop run 2
+22:36:20 [6741.2] link down (wifi up)
+22:36:20 [6741.2] MQTT connect to 192.168.0.10:1883 as lighting ...
+22:36:20 [6741.3] reconnected after 51 ms (#2)
+22:36:20 [6741.4] hub is online
+== drop run 3
+22:36:32 [6753.3] link down (wifi up)
+22:36:32 [6753.3] MQTT connect to 192.168.0.10:1883 as lighting ...
+22:36:32 [6753.4] reconnected after 49 ms (#3)
+22:36:32 [6753.5] hub is online
+22:36:44 [6765.3] lighting-node1 wifi=1 mqtt=1 hub=1 rssi=-14 reconnects=3 dropped=0 heap=249916
+22:36:44 [6765.3] lighting: mode auto, power 0, brightness 80, color #FFFFFF, lux 495 (thr 375, dark 0), last motion 6447s ago
