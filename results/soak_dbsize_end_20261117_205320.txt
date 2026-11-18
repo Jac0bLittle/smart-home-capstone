@@ -1,0 +1,2 @@
+/var/lib/smarthome/log.db 1380352
+/var/lib/smarthome/log.db-wal 4173592
