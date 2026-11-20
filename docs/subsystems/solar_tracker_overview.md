@@ -15,12 +15,12 @@ It improves on the 2019 LabVIEW model by running on its own wireless ESP32 node,
 | ESP32-WROOM-32 DevKit + 38-pin screw-terminal breakout | 1 | order list (6 bought) | controller, Wi-Fi/MQTT |
 | MG90S metal-gear micro servo | 2 (4-pack) | order list | pan and tilt |
 | GL5528 photoresistor | 4 (20-pack) | order list | light direction sensing |
-| 10 kΩ resistor | 4 | **lab stock (not on order)** | LDR divider bottom half |
+| 10 kΩ resistor | 4 | on hand | LDR divider bottom half |
 | Mini solar panel, 6 V 1–2 W (~110 × 60 mm) | 2 | order list | tracked + fixed reference |
 | INA219 current/voltage sensor | 2 (4-pack) | order list | panel V, mA, mW |
-| 22 Ω 3 W resistor (20–27 Ω, ≥ 2 W) | 2 | **not on order** | fixed panel load so power is real |
-| 470 µF 10 V electrolytic (C2) | 1 | **lab stock** | absorbs servo start-up spikes |
-| 10 µF electrolytic (EN–GND) | 1 | **lab stock** | auto upload-mode fix from the bench test |
+| 22 Ω 3 W resistor (20–27 Ω, ≥ 2 W) | 2 | on hand | fixed panel load so power is real |
+| 470 µF 10 V electrolytic (C2) | 1 | on hand | absorbs servo start-up spikes |
+| 10 µF electrolytic (EN–GND) | 1 | on hand | auto upload-mode fix from the bench test |
 | 3D-printed tracker: base, yoke, panel plate with LDR seat + cross divider, 2 tilt ears | 5 prints | `hardware/3d-prints/` | mechanism (replaces the $30 bracket kit) |
 | M3 × 8/12 screws, nuts, nyloc, washers; M2 self-tappers (servo bags) | – | lab / servo bags | assembly |
 | 18 AWG red/black pair from the Wago bus; 22 AWG hook-up; JST-XH leads | – | order list | power and signals |
@@ -92,13 +92,12 @@ Node-RED **Solar** tab: mode, pan and tilt readouts; mode dropdown; manual pan/t
 ## 8. Open items
 
 1. **Write the INA219 driver** (two sensors, 0x40/0x41) and replace the simulated telemetry; set `SIM_INPUTS=0` for this node.
-2. **Get passives:** 4 × 10 kΩ, 2 × 22 Ω 3 W, 470 µF, 10 µF.
-3. **Check the servo-angle mapping at assembly:** the firmware's tilt range is 10–90 servo degrees with park at 45. Mount the tilt horn so that range stays within ±65° of level (the 3D-print clearance). Adjust `TILT_MIN/MAX` and `PARK_TILT` to match.
-4. **Calibrate:** check each LDR's raw reading under even light and add per-channel offsets if they differ. Tune `LOW_LIGHT` (600) in the real room, and `DEAD_BAND` / `GAIN_DEG` if it hunts or lags.
-5. **Set the reference panel's real orientation** (the sim assumes az 90°, el 45°) and mount it beside the tracker.
-6. **Test outdoors** in spring, after the Feb 1 mounting date. Guo et al. lost November/December test days to weather. Bench-test with a lamp first.
-7. **Remove the $30 pan/tilt bracket** from the order list.
-8. Optional: add a daily energy (Wh) total for each panel in Node-RED. It's a stronger report figure than instantaneous mW.
+2. **Check the servo-angle mapping at assembly:** the firmware's tilt range is 10–90 servo degrees with park at 45. Mount the tilt horn so that range stays within ±65° of level (the 3D-print clearance). Adjust `TILT_MIN/MAX` and `PARK_TILT` to match.
+3. **Calibrate:** check each LDR's raw reading under even light and add per-channel offsets if they differ. Tune `LOW_LIGHT` (600) in the real room, and `DEAD_BAND` / `GAIN_DEG` if it hunts or lags.
+4. **Set the reference panel's real orientation** (the sim assumes az 90°, el 45°) and mount it beside the tracker.
+5. **Test outdoors** in spring, after the Feb 1 mounting date. Guo et al. lost November/December test days to weather. Bench-test with a lamp first.
+6. **Remove the $30 pan/tilt bracket** from the order list.
+7. Optional: add a daily energy (Wh) total for each panel in Node-RED. It's a stronger report figure than instantaneous mW.
 
 ## References (from research/references.md)
 
