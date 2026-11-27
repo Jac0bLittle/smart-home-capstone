@@ -11,6 +11,8 @@ Report-ready circuit diagrams for the Smart Home Model, drawn from the Nov 19 or
 | Lighting node (WS2812B ×2, 74AHCT125, BH1750, PIR) | [png](05_lighting_node.png) | [svg](05_lighting_node.svg) |
 | Solar tracker node (4 LDRs, 2× MG90S, 2× INA219) | [png](06_solar_tracker_node.png) | [svg](06_solar_tracker_node.svg) |
 
+> **Being updated:** the climate node and power distribution diagrams will be redrawn for the new heater, and the speakerphone label on the power and network diagrams will change to the ordered model. Draft Fritzing-style connection diagrams for team reference are in [drafts/](drafts/).
+
 [Smart_Home_Circuit_Diagrams.pdf](Smart_Home_Circuit_Diagrams.pdf) has all six plus a pin map and a list of parts the order list is missing.
 
 ## Pin map
